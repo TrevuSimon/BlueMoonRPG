@@ -1,6 +1,6 @@
 package rpg.bluemoon;
 
-public class sheet {
+public class Sheet {
     String name;
 
     //fhysique traits

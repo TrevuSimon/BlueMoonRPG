@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:controller="rpg.bluemoon.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Personagem">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfName" layoutX="228.0" layoutY="79.0" />
+                  <TextField fx:id="tfStr" layoutX="82.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfDex" layoutX="82.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfEnd" layoutX="82.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfVit" layoutX="82.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+                  <Button  layoutX="274.0" layoutY="293.0" mnemonicParsing="false" text="Pronto" onAction="#btClicked"/>
+                  <Label layoutX="23.0" layoutY="186.0" text="Destreza" />
+                  <Label layoutX="32.0" layoutY="161.0" text="Forca" />
+                  <Label layoutX="27.0" layoutY="211.0" text="Dureza" />
+                  <Label layoutX="20.0" layoutY="236.0" text="Vitalidade" />
+                  <Label layoutX="206.0" layoutY="161.0" text="Vontade" />
+                  <Label layoutX="198.0" layoutY="186.0" text="Inteligencia" />
+                  <Label layoutX="201.0" layoutY="211.0" text="Sabedoria" />
+                  <Label layoutX="190.0" layoutY="236.0" text="Discernimento" />
+                  <Label layoutX="391.0" layoutY="165.0" text="Carisma" />
+                  <Label layoutX="390.0" layoutY="186.0" text="Dominio" />
+                  <Label layoutX="389.0" layoutY="211.0" text="Liderança" />
+                  <Label layoutX="408.0" layoutY="236.0" text="Fé" />
+                  <Label layoutX="286.0" layoutY="62.0" text="Nome" />
+                  <TextField id="tfWis" layoutX="275.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfWill" layoutX="275.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfIns" layoutX="275.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfInt" layoutX="275.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfLea" layoutX="457.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfDom" layoutX="457.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfFai" layoutX="457.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+                  <TextField id="tfCha" layoutX="457.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                  <Label layoutX="118.0" layoutY="128.0" text="Fisico" />
+                  <Label layoutX="301.0" layoutY="128.0" text="Mental" />
+                  <Label layoutX="486.0" layoutY="128.0" text="Persona" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Batalha">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+      <Tab text="Enimigo">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
