@@ -10,7 +10,7 @@ public class Controller {
     Sheet sheet1 = new Sheet();
 
     //For your character
-    static public TextField tfName;
+    public TextField tfName;
 
     public TextField tfStr;
     public TextField tfDex;
@@ -27,7 +27,7 @@ public class Controller {
     public TextField tfLea;
     public TextField tfFai;
 
-    static public TextField tfName1;
+    public TextField tfName1;
 
     public TextField tfStr1;
     public TextField tfDex1;
