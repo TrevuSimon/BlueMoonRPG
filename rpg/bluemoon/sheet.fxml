@@ -14,11 +14,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="tfName" layoutX="228.0" layoutY="79.0" />
-                  <TextField fx:id="tfStr" layoutX="82.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfDex" layoutX="82.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfEnd" layoutX="82.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfVit" layoutX="82.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
                   <Button  layoutX="274.0" layoutY="293.0" mnemonicParsing="false" text="Pronto" onAction="#btClicked"/>
                   <Label layoutX="23.0" layoutY="186.0" text="Destreza" />
                   <Label layoutX="32.0" layoutY="161.0" text="Forca" />
@@ -33,14 +29,24 @@
                   <Label layoutX="389.0" layoutY="211.0" text="Liderança" />
                   <Label layoutX="408.0" layoutY="236.0" text="Fé" />
                   <Label layoutX="286.0" layoutY="62.0" text="Nome" />
-                  <TextField id="tfWis" layoutX="275.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfWill" layoutX="275.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfIns" layoutX="275.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfInt" layoutX="275.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfLea" layoutX="457.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfDom" layoutX="457.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfFai" layoutX="457.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
-                  <TextField id="tfCha" layoutX="457.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+
+                   <TextField fx:id="tfName" layoutX="228.0" layoutY="79.0" />
+
+                   <TextField fx:id="tfStr" layoutX="82.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfDex" layoutX="82.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfEnd" layoutX="82.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfVit" layoutX="82.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
+                   <TextField fx:id="tfWil" layoutX="275.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfInt" layoutX="275.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfWis" layoutX="275.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfIns" layoutX="275.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
+                   <TextField fx:id="tfCha" layoutX="457.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfDom" layoutX="457.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfLea" layoutX="457.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                   <TextField fx:id="tfFai" layoutX="457.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
                   <Label layoutX="118.0" layoutY="128.0" text="Fisico" />
                   <Label layoutX="301.0" layoutY="128.0" text="Mental" />
                   <Label layoutX="486.0" layoutY="128.0" text="Persona" />
@@ -54,7 +60,45 @@
     </Tab>
       <Tab text="Enimigo">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
+            <children>
+
+                <Button  layoutX="274.0" layoutY="293.0" mnemonicParsing="false" text="Pronto" onAction="#btClicked1"/>
+                <Label layoutX="23.0" layoutY="186.0" text="Destreza" />
+                <Label layoutX="32.0" layoutY="161.0" text="Forca" />
+                <Label layoutX="27.0" layoutY="211.0" text="Dureza" />
+                <Label layoutX="20.0" layoutY="236.0" text="Vitalidade" />
+                <Label layoutX="206.0" layoutY="161.0" text="Vontade" />
+                <Label layoutX="198.0" layoutY="186.0" text="Inteligencia" />
+                <Label layoutX="201.0" layoutY="211.0" text="Sabedoria" />
+                <Label layoutX="190.0" layoutY="236.0" text="Discernimento" />
+                <Label layoutX="391.0" layoutY="165.0" text="Carisma" />
+                <Label layoutX="390.0" layoutY="186.0" text="Dominio" />
+                <Label layoutX="389.0" layoutY="211.0" text="Liderança" />
+                <Label layoutX="408.0" layoutY="236.0" text="Fé" />
+                <Label layoutX="286.0" layoutY="62.0" text="Nome" />
+
+                <TextField fx:id="tfName1" layoutX="228.0" layoutY="79.0" />
+
+                <TextField fx:id="tfStr1" layoutX="82.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfDex1" layoutX="82.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfEnd1" layoutX="82.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfVit1" layoutX="82.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
+                <TextField fx:id="tfWil1" layoutX="275.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfInt1" layoutX="275.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfWis1" layoutX="275.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfIns1" layoutX="275.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
+                <TextField fx:id="tfCha1" layoutX="457.0" layoutY="157.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfDom1" layoutX="457.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfLea1" layoutX="457.0" layoutY="207.0" prefHeight="25.0" prefWidth="100.0" />
+                <TextField fx:id="tfFai1" layoutX="457.0" layoutY="232.0" prefHeight="25.0" prefWidth="100.0" />
+
+                <Label layoutX="118.0" layoutY="128.0" text="Fisico" />
+                <Label layoutX="301.0" layoutY="128.0" text="Mental" />
+                <Label layoutX="486.0" layoutY="128.0" text="Persona" />
+            </children></AnchorPane>
         </content>
       </Tab>
   </tabs>
