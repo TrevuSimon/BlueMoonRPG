@@ -8,14 +8,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane fx:controller="rpg.bluemoon.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rpg.bluemoon.Controller">
   <tabs>
     <Tab text="Personagem">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
 
-                  <Button  layoutX="274.0" layoutY="293.0" mnemonicParsing="false" text="Pronto" onAction="#btClicked"/>
+                  <Button layoutX="274.0" layoutY="293.0" mnemonicParsing="false" onAction="#btClicked" text="Pronto" />
                   <Label layoutX="23.0" layoutY="186.0" text="Destreza" />
                   <Label layoutX="32.0" layoutY="161.0" text="Forca" />
                   <Label layoutX="27.0" layoutY="211.0" text="Dureza" />
@@ -55,15 +55,21 @@
     </Tab>
     <Tab text="Batalha">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="taResult" layoutX="200.0" layoutY="120.0" prefHeight="200.0" prefWidth="200.0" />
+                  <Button layoutX="279.0" layoutY="57.0" mnemonicParsing="false" text="Fight" onAction="#result"/>
+                  <Label fx:id="lbChar" layoutX="186.0" layoutY="52.0" text="Label" />
+                  <Label fx:id="lbEnem" layoutX="386.0" layoutY="52.0" text="Label" />
+               </children></AnchorPane>
       </content>
     </Tab>
       <Tab text="Enimigo">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
             <children>
 
-                <Button  layoutX="274.0" layoutY="293.0" mnemonicParsing="false" text="Pronto" onAction="#btClicked1"/>
+                <Button layoutX="274.0" layoutY="293.0" mnemonicParsing="false" onAction="#btClicked1" text="Pronto" />
                 <Label layoutX="23.0" layoutY="186.0" text="Destreza" />
                 <Label layoutX="32.0" layoutY="161.0" text="Forca" />
                 <Label layoutX="27.0" layoutY="211.0" text="Dureza" />

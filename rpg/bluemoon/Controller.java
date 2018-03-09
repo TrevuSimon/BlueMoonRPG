@@ -2,6 +2,7 @@ package rpg.bluemoon;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Controller {
@@ -27,6 +28,7 @@ public class Controller {
     public TextField tfLea;
     public TextField tfFai;
 
+    //For enemy field
     public TextField tfName1;
 
     public TextField tfStr1;
@@ -44,10 +46,14 @@ public class Controller {
     public TextField tfLea1;
     public TextField tfFai1;
 
+    //battle field
+    public Label lbChar;
+    public Label lbEnem;
+    public TextArea taResult;
+
     public void btClicked(ActionEvent actionEvent){
-
-
         sheet.name = tfName.getText();
+        lbChar.setText(tfName.getText());
 
         sheet.strength = Integer.parseInt(tfStr.getText());
         sheet.dexterity = Integer.parseInt(tfDex.getText());
@@ -66,9 +72,8 @@ public class Controller {
     }
 
     public void btClicked1(ActionEvent actionEvent){
-
-
         sheet1.name = tfName.getText();
+        lbEnem.setText(tfName1.getText());
 
         sheet1.strength = Integer.parseInt(tfStr.getText());
         sheet1.dexterity = Integer.parseInt(tfDex.getText());
@@ -86,5 +91,8 @@ public class Controller {
         sheet1.faith = Integer.parseInt(tfFai.getText());
     }
 
+    public void result(ActionEvent actionEvent){
+
+    }
 
 }
