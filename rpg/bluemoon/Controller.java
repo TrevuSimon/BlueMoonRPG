@@ -52,43 +52,43 @@ public class Controller {
     public TextArea taResult;
 
     public void btClicked(ActionEvent actionEvent){
-        sheet.name = tfName.getText();
+        sheet.setName(tfName.getText());
         lbChar.setText(tfName.getText());
 
-        sheet.strength = Integer.parseInt(tfStr.getText());
-        sheet.dexterity = Integer.parseInt(tfDex.getText());
-        sheet.endurance = Integer.parseInt(tfEnd.getText());
-        sheet.vitality = Integer.parseInt(tfVit.getText());
+        sheet.setStrength(Integer.parseInt(tfStr.getText()));
+        sheet.setDexterity(Integer.parseInt(tfDex.getText()));
+        sheet.setEndurance(Integer.parseInt(tfEnd.getText()));
+        sheet.setVitality(Integer.parseInt(tfVit.getText()));
 
-        sheet.willpower = Integer.parseInt(tfWil.getText());
-        sheet.inteligence = Integer.parseInt(tfInt.getText());
-        sheet.wisdom = Integer.parseInt(tfWis.getText());
-        sheet.insight = Integer.parseInt(tfIns.getText());
+        sheet.setWillpower(Integer.parseInt(tfWil.getText()));
+        sheet.setInteligence(Integer.parseInt(tfInt.getText()));
+        sheet.setWisdom(Integer.parseInt(tfWis.getText()));
+        sheet.setInsight(Integer.parseInt(tfIns.getText()));
 
-        sheet.charm = Integer.parseInt(tfCha.getText());
-        sheet.dominion = Integer.parseInt(tfDom.getText());
-        sheet.leadership = Integer.parseInt(tfLea.getText());
-        sheet.faith = Integer.parseInt(tfFai.getText());
+        sheet.setCharm(Integer.parseInt(tfCha.getText()));
+        sheet.setDominion(Integer.parseInt(tfDom.getText()));
+        sheet.setLeadership(Integer.parseInt(tfLea.getText()));
+        sheet.setFaith(Integer.parseInt(tfFai.getText()));
     }
 
     public void btClicked1(ActionEvent actionEvent){
-        sheet1.name = tfName.getText();
-        lbEnem.setText(tfName1.getText());
+        sheet1.setName(tfName1.getText());
+        lbChar.setText(tfName1.getText());
 
-        sheet1.strength = Integer.parseInt(tfStr.getText());
-        sheet1.dexterity = Integer.parseInt(tfDex.getText());
-        sheet1.endurance = Integer.parseInt(tfEnd.getText());
-        sheet1.vitality = Integer.parseInt(tfVit.getText());
+        sheet1.setStrength(Integer.parseInt(tfStr1.getText()));
+        sheet1.setDexterity(Integer.parseInt(tfDex1.getText()));
+        sheet1.setEndurance(Integer.parseInt(tfEnd1.getText()));
+        sheet1.setVitality(Integer.parseInt(tfVit1.getText()));
 
-        sheet1.willpower = Integer.parseInt(tfWil.getText());
-        sheet1.inteligence = Integer.parseInt(tfInt.getText());
-        sheet1.wisdom = Integer.parseInt(tfWis.getText());
-        sheet1.insight = Integer.parseInt(tfIns.getText());
+        sheet1.setWillpower(Integer.parseInt(tfWil1.getText()));
+        sheet1.setInteligence(Integer.parseInt(tfInt1.getText()));
+        sheet1.setWisdom(Integer.parseInt(tfWis1.getText()));
+        sheet1.setInsight(Integer.parseInt(tfIns1.getText()));
 
-        sheet1.charm = Integer.parseInt(tfCha.getText());
-        sheet1.dominion = Integer.parseInt(tfDom.getText());
-        sheet1.leadership = Integer.parseInt(tfLea.getText());
-        sheet1.faith = Integer.parseInt(tfFai.getText());
+        sheet1.setCharm(Integer.parseInt(tfCha1.getText()));
+        sheet1.setDominion(Integer.parseInt(tfDom1.getText()));
+        sheet1.setLeadership(Integer.parseInt(tfLea1.getText()));
+        sheet1.setFaith(Integer.parseInt(tfFai1.getText()));
     }
 
     public void result(ActionEvent actionEvent){
